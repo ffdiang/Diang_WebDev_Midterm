@@ -1,78 +1,81 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <style>
+          
+            .dtls {
+            display: flex;
+            flex-direction: column;
+            }
 
-<head>
-  <title>Registration Form</title>
-  <meta charset="utf-8">
-  <h1>Registration Form</h1>
-  <style>
-  .main{
+            input{
+            padding: 5px;
+            margin-bottom: 15px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #eee;
+            color:#000000 ;
+            }
+
+            .main{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100%;
-            padding: 25px;
-            background: #080808; 
+            padding: 25px; 
             }
 </style>
-</head>
-<body>
-  <table>
-    <tr>
-      <td><strong>Username: </strong></td>
-      <td>
-        <input type="txt" id="txtname" name="txtname" placeholder="Enter ID" />
-      </td>
-    </tr>
-    
-     <td><strong>Email: </strong></td>
-      <td>
-        <input type="txt" id="txtname" name="txtname" placeholder="Enter Email" />
-      </td>
-    </tr>
+    </head>
+    <body>
+        <div class="main">
+            <form action="">
+                
+                <h1>Registration Form </h1>
+                <div class="dtls">
+                    <label for="form">Username:</label>
+                    <input type="text" name="name" placeholder="Enter Username">
 
-    <tr>
-      <td><strong>Password: </strong></td>
-      <td><input type="password" id="txtpass" pass="txtpass" placeholder="Enter Password" />
-      </td>
-    </tr>
+                    <label for="form">Email:</label>
+                    <input type="email" name="email" placeholder="Enter Email">
+                  
+                  
+                    <label for="form">Birthday:</label>
+                    <input type="date" name="birthday">
 
-    <tr>
-      <td><strong>Gender: </strong></td>
-      <td>
-        <input type="radio" id="loginType" name="loginType" value="male" selected="selected" />
-        <laber for "logintype">Male
-      </td>
+                    <label for="form">Password:</label>
+                    <input type="password" name="password" placeholder="Enter Password">
+                </div>
 
-      <td><input type="radio" id="loginType" name="loginType" value="female" selected="selected" />
-        <laber for "logintype">Female
-      </td>
-    </tr>
-  
-  <tr>
-        <td colspan = "2"><strong>Civil Status: </strong>
-                        <select name="drpLoginType" id = "drpLoginType">
+                <div class="radio">
+                   <label for="form">Gender:</label>
+                    <input type="radio" name="gender" value="Male"/>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" value="Female"/>
+                    <label for="gender">Female</label>
+                </div>
+                
+                <div class="drop">
+                    <label for="form">Civil Status:</label>
+                  <select>
+                        <option value="" disabled selected>Select</option>
                         <option value="Single">Single</option>
                         <option value="Married">Married</option>
                         <option value="Devorced">Separated</option>
                         <option value="Divorsed">Devorced</option>
                     </select>
-      </td>
-  </tr>
-  
-    <tr>
-      <td><input type="checkbox" id="cbx" value="check" />
-        <laber for "cbx">
-      </td>
-    </tr>
-   <tr>
-     <td>
-                    <button onClick="window.location.reload();">Reset</button>
-                    <button onClick="">Register</button>
-      </td>  
-  </tr>
-  </table>
-</body>
+                </div>
 
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox"><span>Accept privacy policy and terms</span>
+                </div>
+                <div class="button">
+                    <button onClick="">Register</button>
+                    <button onClick="window.location.reload();">Reset</button>
+                </div>
+               </form>
+        </div>
+    </body>
 </html>
