@@ -122,6 +122,7 @@ a:hover
     <h1 class="title text-center">Master/Detail</h1>
     <div class="md-container">
         <div class="col-3 master">
+          <div class="master-item" onclick="select(this)">Midterm Activities</div>
             <div class="master-item" onclick="select(this)"><a href ="https://ffdiang.github.io/Diang_WebDev_Midterm/Poem.html"target = "item">Poem</div>
             <div class="master-item" onclick="select(this)"><a href ="https://ffdiang.github.io/Diang_WebDev_Midterm/Wishlist.html"target = "item">Wishlist</div>
             <div class="master-item" onclick="select(this)"><a href ="https://ffdiang.github.io/Diang_WebDev_Midterm/markup.html"target = "item">Markup</div>
@@ -135,31 +136,5 @@ a:hover
               <iframe src="https://ffdiang.github.io/Diang_WebDev_Midterm/welcome.html" name="item" frameborder=""height="100%" width="100%"></iframe>
         </div>
       </div>
-            <script>
-                      const detail = document.querySelector('.detail');
-        const detailTitle = document.querySelector('.detail-title');
-        const masterItems = document.querySelectorAll('.master-item');
-
-        function select(selected){
-            //Remove active class from all master-items
-            for(var item of masterItems){
-                item.classList.remove('active-item');
-            }
-            //Make selected tab active
-            selected.classList.add('active-item');
-            //Toggle the class that hides when the screen is medium size or less
-            detail.classList.remove('hidden-md-down');
-            //Set the content of the detail to the innerHTML of the selected item
-            detailTitle.innerHTML = selected.innerHTML;
-        }
-
-        function back(){
-            //Remove active class from all master-items
-            for(var item of masterItems){
-                item.classList.remove('active-item');
-            }
-            detail.classList.add('hidden-md-down');
-        }
-            </script>
 </body>
             </html>
