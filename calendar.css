@@ -1,6 +1,6 @@
 body{
         background-color: black;
-        background-image: url("https://ffdiang.github.io/Diang_WebDev_Midterm/calendar.png");
+        background-image: url("https://ffdiang.github.io/Diang_WebDev_Midterm/calendar.jpg");
    
       }
       .container {
@@ -10,7 +10,7 @@ body{
       }
       .month {
         text-allign: center;
-        background-color: gray;
+        background-color: white;
         font-size: 2.5em; 
         letter-spacing: 5px; 
         color: #FF0099; 
@@ -29,13 +29,13 @@ body{
         padding: 20px;
       }
       th {
-        background: gray;
+        background: white;
         color: #00FFFF; 
       }
       td {
-        background: gray; 
+        background: white; 
       }
       #bmonth {
         font-size: 20px;
-        background: gray;
+        background: white;
       }
