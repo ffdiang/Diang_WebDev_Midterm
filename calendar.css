@@ -6,7 +6,7 @@
 .cont, body{
     width:100%;
     height:100vh;
-    background-color: #000080;
+    background-color: #F78340;
     color:white;
     display: flex;
     justify-content: left;
@@ -14,11 +14,11 @@
 }
 
 #ainer{
-    background-image: url("https://github.com/ffdiang/Diang_WebDev_Midterm/blob/master/calendar.jpg");
+    background-image: url("https://ffdiang.github.io/Diang_WebDev_Midterm/callendarwithcss.jpg");
     background-repeat: no-repeat;
     background-position: left;
 }
-
 #tb{
     background: transparent;
 }
+
