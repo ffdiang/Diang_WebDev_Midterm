@@ -1,12 +1,4 @@
-*
- body
-{
-        background-image: url("https://ffdiang.github.io/Diang_WebDev_Midterm/callendarwithcss.jpg");
-        background-repeat: no-repeat;
-         background-position: left;
-
-      }
-{
+*{
     margin: 10px;
     padding: 5px;
     font-family: Courier New;     
@@ -21,7 +13,11 @@
     align-items:center;
 }
 
+#ainer{
+    background-image: url("https://ffdiang.github.io/Diang_WebDev_Midterm/callendarwithcss.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
 #tb{
     background: transparent;
 }
-
