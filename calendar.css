@@ -6,7 +6,7 @@
 .cont, body{
     width:100%;
     height:100vh;
-    background-color: #12121f;
+    background-color: #000080;
     color:white;
     display: flex;
     justify-content: left;
@@ -16,7 +16,7 @@
 #ainer{
     background-image: url("https://github.com/ffdiang/Diang_WebDev_Midterm/blob/master/calendar.jpg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
 }
 
 #tb{
