@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+body {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 14px;
+}
+.nav-bar span {
+  margin: 0 10px;
+}
+.nav-bar img {
+  margin: 0 10px;
+  position: absolute;
+  top: 10px;
+  right: 104px;
+  height: 40px;
+  width: 40px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #757575;
+  font-weight: bold;
+margin-top: 200px;
+  
+}
+
+input {
+  height: 42px;
+  border-top: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #cccccc;
+  padding: 10px;
+  box-shadow: 0 1px 2px grey;
+  margin: 36px 0;
+  width: 478px;
+  border-radius: 16px;
+  
+}
+input:hover,input:active {
+  box-shadow: 0 1px 4px grey;
+}
+.search span a {
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 2px;
+  
+}
+.search span a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border: solid 1px #dfdfdf;
+  margin: 4px;
+  padding: 10px;
+}
+.footer {
+  background-color: #f2f2f2;
+  border: solid 1px #dfdfdf;
+  padding-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.language{ 
+  margin: auto; 
+  margin-top: 30px;
+}
+.language span1 a{
+  color: black;
+}
+.language span a{
+  color: blue;
+}
+
+.footer a {
+  margin: 20px;
+}
+.footer a:active {
+  color: tomato;
+}
+
+.left {
+  padding-left: 27px;
+}
+
+.right {
+  padding-right: 27px;
+}
+
+.btn {
+  display: inline-flex;
+  border-radius: 6px;
+  background-color: #4285f4;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
